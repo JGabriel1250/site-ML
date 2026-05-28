@@ -9,18 +9,90 @@
    ========================================================= */
 
 :root {
-    /* CORES */
-    --wine: #5a1a1a;
-    --wine-dark: #3a0f0f;
-    --wine-deep: #220a0a;
 
-    --gold: #c9a24c;
+   /* CORES */
+   --wine: #5a1a1a;
+   --wine-dark: #3a0f0f;
+   --wine-deep: #220a0a;
 
-    --gray: #6b6b6b;
+   --gold: #c9a24c;
 
-    --light: #f5f1ee;
+   --gray: #6b6b6b;
 
-    --border: #e8e0d8;
+   --light: #f5f1ee;
 
-    --white: #ffffff;
+   --border: #e8e0d8;
+
+   --white: #ffffff;
+
+
+   /* FONTES */
+   --title: "Cormorant Garamond", Georgia, serif;
+   --text: "Inter", system-ui, sans-serif;
+
+
+   /* LAYOUT */
+   --max-width: 1200px;
+   --section-gap: 100px;
+
+
+   /* TRANSIÇÃO */
+   --ease: 0.3s ease;
 }
+
+
+
+/* =========================================================
+   2. RESET
+   ========================================================= */
+
+   *,
+   *::before,
+   *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+
+   html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+   }
+
+
+   body {
+      font-family: var(--text);
+      line-height: 1.7;
+      color: var(--wine);
+      background: var(--white);
+
+      -webkit-font-smoothing: antialiased;
+
+      overflow-x: hidden;
+   }
+
+
+   img {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 2px 3px 3px rgb(0, 0, 0, 0.427);
+   }
+
+
+   a {
+      text-decoration: none;
+      color: inherit;
+   }
+
+
+   ul {
+      list-style: none;
+   }
+
+
+
+   /* =========================================================
+   3. TIPOGRAFIA
+   ========================================================= */
