@@ -1,0 +1,49 @@
+/* =========================================================
+   4. LAYOUT
+   ========================================================= */
+
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+.section {
+    padding: var(--section-gap);
+}
+
+
+.section-dark {
+    background: var(--wine-dark);
+    color: var(--white);
+}
+
+.section-soft {
+    background: var(--light);
+}
+
+.section-head {
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.two-col p {
+    margin-bottom: 20px;
+    color: var(--gray);
+    line-height: 1.9;
+}
+
+.two-col p:last-child {
+    margin-bottom: 0;
+}

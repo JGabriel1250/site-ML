@@ -1,0 +1,32 @@
+/* =========================================================
+   5. HEADER
+   ========================================================= */
+
+.header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 100;
+
+    background: var(--wine-dark);
+
+    border-bottom: 1px solid rgba(201, 162, 76, 0.2);
+
+    transition: box-shadow var(--ease);
+}
+
+.header.scrolled {
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

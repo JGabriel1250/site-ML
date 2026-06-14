@@ -1,0 +1,60 @@
+/* =========================================================
+   3. TIPOGRAFIA
+   ========================================================= */
+
+   h1,
+   h2,
+   h3 {
+      font-family: var(--title);
+      font-weight: 600;
+      line-height: 1.15;
+   }
+
+
+   h1 {
+      font-size: clamp(2.4rem,5vw, 4rem);
+   }
+
+
+   h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+   }
+
+
+   h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+   }
+
+
+   .gold {
+      color: var(--gold);
+      font-style: normal;
+   }
+
+
+   .eyebrow {
+      display: inline-block;
+
+      margin-bottom: 16px;
+
+      color: var(--gold);
+
+      font-size: 0.72rem;
+      font-weight: 500;
+
+      text-transform: uppercase;
+      letter-spacing: 3px;
+   }
+
+
+   .lead {
+      max-width: 400px;
+
+      margin-bottom: 36px;
+
+      color: var(--gray);
+
+      font-size: 1.05rem;
+      line-height: 1.9;
+   }
