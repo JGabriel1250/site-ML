@@ -1,16 +1,27 @@
 # ⚖️ Maria Luiza Lisboa | Advocacia
 
-Site institucional desenvolvido para a advogada **Maria Luiza Lisboa (OAB/SE 16.773)**, com foco em transmitir credibilidade, profissionalismo e proximidade com seus clientes.
-
-O projeto foi desenvolvido utilizando **HTML5, CSS3 e JavaScript puro**, priorizando performance, organização de código, responsividade e facilidade de manutenção.
-
-🔗 **Site Online:** https://marialuiza-adv.vercel.app/
-
-🔗 **Repositório:** https://github.com/JGabriel1250/site-ML
-
+![Status](https://img.shields.io/badge/Status-Concluído-success)
+![Deploy](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-blue)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+Site institucional desenvolvido para a advogada **Maria Luiza Lisboa (OAB/SE 16.773)**, com foco em transmitir credibilidade, profissionalismo e proximidade com seus clientes.
+
+O projeto foi construído utilizando **HTML5, CSS3 e JavaScript puro**, priorizando desempenho, organização de código, responsividade e facilidade de manutenção.
+
+---
+
+## 🌐 Acessar Projeto
+
+🚀 **Deploy Online**
+
+https://marialuiza-adv.vercel.app/
+
+📂 **Código-fonte**
+
+https://github.com/JGabriel1250/site-ML
 
 ---
 
@@ -18,12 +29,7 @@ O projeto foi desenvolvido utilizando **HTML5, CSS3 e JavaScript puro**, prioriz
 
 ### Página Inicial
 
-> 
-<img width="1881" height="874" alt="image" src="https://github.com/user-attachments/assets/9945d18a-2cee-4251-b03d-0a7d133ada5c" />
-
-```html
-<img src="./assets/preview-home.png" alt="Preview do site Maria Luiza Lisboa Advocacia">
-```
+<img width="1881" height="874" alt="Preview Página Inicial" src="https://github.com/user-attachments/assets/9945d18a-2cee-4251-b03d-0a7d133ada5c" />
 
 ---
 
@@ -34,7 +40,7 @@ O projeto foi desenvolvido utilizando **HTML5, CSS3 e JavaScript puro**, prioriz
 - ✅ Menu mobile com animação de abertura e fechamento
 - ✅ Header dinâmico durante a rolagem da página
 - ✅ Animações de entrada conforme o scroll
-- ✅ Botão flutuante de WhatsApp para contato rápido
+- ✅ Botão flutuante de WhatsApp
 - ✅ Estrutura semântica otimizada para SEO
 - ✅ Layout moderno e profissional
 - ✅ Copyright atualizado automaticamente via JavaScript
@@ -46,21 +52,24 @@ O projeto foi desenvolvido utilizando **HTML5, CSS3 e JavaScript puro**, prioriz
 
 O site apresenta os principais serviços oferecidos pela profissional:
 
-- ⚖️ Direito da Família
-  - Divórcios
-  - Guarda
-  - Pensão alimentícia
-  - Inventários
+### ⚖️ Direito da Família
 
-- 🛡️ Direito do Consumidor
-  - Cobranças indevidas
-  - Contratos abusivos
-  - Demandas bancárias
+- Divórcios
+- Guarda
+- Pensão alimentícia
+- Inventários
 
-- 📜 Direito Previdenciário
-  - Aposentadorias
-  - Benefícios do INSS
-  - Revisões previdenciárias
+### 🛡️ Direito do Consumidor
+
+- Cobranças indevidas
+- Contratos abusivos
+- Demandas bancárias
+
+### 📜 Direito Previdenciário
+
+- Aposentadorias
+- Benefícios do INSS
+- Revisões previdenciárias
 
 ---
 
@@ -166,6 +175,21 @@ site-ML/
 
 ---
 
+## 🎯 Desafios do Projeto
+
+Durante o desenvolvimento foram trabalhados:
+
+- Estruturação completa de uma landing page profissional
+- Organização modular dos arquivos CSS
+- Responsividade para desktop, tablet e mobile
+- Criação de componentes reutilizáveis
+- Integração direta com WhatsApp
+- Experiência do usuário focada em conversão
+- Hospedagem e deploy utilizando Vercel
+- Manutenção simplificada através da separação de responsabilidades
+
+---
+
 ## 🚀 Como Executar Localmente
 
 Clone o repositório:
@@ -196,11 +220,11 @@ http://localhost:8000
 
 ---
 
-## 💼 Sobre Este Repositório
+## 💼 Sobre o Projeto
 
-Este repositório foi criado para fins de **portfólio e demonstração técnica**.
+Este site foi desenvolvido sob demanda para uma cliente real, com o objetivo de fortalecer sua presença digital e facilitar o contato com potenciais clientes.
 
-O projeto original utilizado em produção foi desenvolvido para a advogada **Maria Luiza Lisboa** e encontra-se em ambiente privado. Esta versão pública foi reorganizada e documentada para apresentar as soluções utilizadas, a estrutura do código e as boas práticas adotadas durante o desenvolvimento.
+A versão pública deste repositório foi reorganizada para fins de estudo, demonstração técnica e portfólio, preservando a estrutura, organização e principais soluções utilizadas durante o desenvolvimento do projeto.
 
 ---
 
@@ -226,10 +250,10 @@ Durante o desenvolvimento deste projeto foram colocados em prática conceitos de
 
 💻 Desenvolvedor Front-end
 
-🐍 Estudante de Python e Java
+🚀 Interessado em Desenvolvimento Web, Python e Java
 
 GitHub:
-👉 https://github.com/JGabriel1250
+https://github.com/JGabriel1250
 
 ---
 
