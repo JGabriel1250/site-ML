@@ -1,32 +1,138 @@
 /* =========================================================
-   5. HEADER
+   header.css
    ========================================================= */
 
+/* HEADER */
+
 .header {
-    position: fixed;
+  position: fixed;
 
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 
-    width: 100%;
+  width: 100%;
 
-    z-index: 100;
+  z-index: 100;
 
-    background: var(--wine-dark);
+  background: var(--wine-dark);
 
-    border-bottom: 1px solid rgba(201, 162, 76, 0.2);
+  border-bottom: 1px solid rgba(201, 162, 76, 0.2);
 
-    transition: box-shadow var(--ease);
+  transition: box-shadow var(--ease);
 }
 
 .header.scrolled {
-    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
-    height: 80px;
+  height: 80px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-mark {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--gold);
+
+  color: var(--gold);
+
+  font-family: var(--title);
+  font-size: 0.95rem;
+}
+
+.logo-text {
+  color: rgba(255, 255, 255, 0.9);
+
+  font-family: var(--title);
+  font-size: 1.15rem;
+}
+
+
+/* NAVEGAÇÃO */
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-list a {
+  position: relative;
+
+  padding-bottom: 2px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 0.85rem;
+
+  transition: color var(--ease);
+}
+
+.nav-list a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--gold);
+
+  transition: width var(--ease);
+}
+
+.nav-list a:hover        { color: var(--gold); }
+.nav-list a:hover::after { width: 100%; }
+
+
+/* MENU MOBILE */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 4px;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 24px;
+  height: 2px;
+
+  display: block;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  transition:
+    transform var(--ease),
+    opacity var(--ease);
+}
+
+.menu-toggle.active span:nth-child(1) { transform: translateY(7px)  rotate(45deg);  }
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }

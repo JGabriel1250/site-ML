@@ -1,1 +1,65 @@
- 
+/* =========================================================
+   footer.css
+   ========================================================= */
+
+.footer {
+  padding: 44px 0;
+
+  background: var(--wine-deep);
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer .logo-mark {
+  border-color: rgba(201, 162, 76, 0.4);
+
+  color: rgba(201, 162, 76, 0.7);
+}
+
+.footer .logo-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.footer-tag {
+  margin-top: 10px;
+
+  font-size: 0.85rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+.footer-dev {
+  width: 100%;
+
+  margin-top: 24px;
+  padding-top: 20px;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: rgba(255, 255, 255, 0.25);
+
+  font-size: 0.78rem;
+}
+
+.footer-dev a {
+  color: rgba(201, 162, 76, 0.55);
+
+  transition: color var(--ease);
+}
+
+.footer-dev a:hover {
+  color: var(--gold);
+}

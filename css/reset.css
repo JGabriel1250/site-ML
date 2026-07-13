@@ -1,48 +1,43 @@
 /* =========================================================
-   2. RESET
+   reset.css
    ========================================================= */
 
-   *,
-   *::before,
-   *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-   }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
 
-   html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 90px;
-   }
+body {
+  font-family: var(--text);
+  line-height: 1.7;
+  color: var(--wine);
+  background: var(--white);
 
+  -webkit-font-smoothing: antialiased;
 
-   body {
-      font-family: var(--text);
-      line-height: 1.7;
-      color: var(--wine);
-      background: var(--white);
+  overflow-x: hidden;
+}
 
-      -webkit-font-smoothing: antialiased;
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.427);
+}
 
-      overflow-x: hidden;
-   }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-
-   img {
-      width: 100%;
-      height: auto;
-      display: block;
-      box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.427);
-   }
-
-
-   a {
-      text-decoration: none;
-      color: inherit;
-   }
-
-
-   ul {
-      list-style: none;
-   }
+ul {
+  list-style: none;
+}

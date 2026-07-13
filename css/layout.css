@@ -1,49 +1,49 @@
 /* =========================================================
-   4. LAYOUT
+   layout.css
    ========================================================= */
 
-
 .container {
-    width: 100%;
-    max-width: var(--max-width);
+  width: 100%;
+  max-width: var(--max-width);
 
-    margin: 0 auto;
-    padding: 0 24px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-
 
 .section {
-    padding: var(--section-gap);
+  padding: var(--section-gap) 0;
 }
 
-
 .section-dark {
-    background: var(--wine-dark);
-    color: var(--white);
+  background: var(--wine-dark);
+  color: var(--white);
 }
 
 .section-soft {
-    background: var(--light);
+  background: var(--light);
 }
 
 .section-head {
-    margin-bottom: 64px;
-    text-align: center;
+  margin-bottom: 64px;
+  text-align: center;
 }
 
 .two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  align-items: start;
 }
 
 .two-col p {
-    margin-bottom: 20px;
-    color: var(--gray);
-    line-height: 1.9;
+  margin-bottom: 20px;
+
+  color: var(--gray);
+
+  line-height: 1.9;
 }
 
 .two-col p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }

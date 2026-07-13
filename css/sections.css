@@ -1,89 +1,214 @@
-/* === SEÇÕES: CARDS, CREDENCIAIS, DEPOIMENTOS, CONTATO === */
+/* =========================================================
+   sections.css — Cards, Credenciais, Depoimentos, Contato
+   ========================================================= */
 
 /* CARDS */
+
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .card {
-    padding: 38px 32px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform var(--ease), border-color var(--ease), background var(--ease);
+  padding: 38px 32px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition:
+    transform var(--ease),
+    border-color var(--ease),
+    background var(--ease);
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    border-color: var(--gold);
-    background: rgba(201, 162, 76, 0.08);
+  transform: translateY(-6px);
+
+  border-color: var(--gold);
+
+  background: rgba(201, 162, 76, 0.08);
 }
 
 .card-icon {
-    margin-bottom: 20px;
-    font-size: 2.2rem;
+  margin-bottom: 20px;
+
+  font-size: 2.2rem;
 }
 
 .card h3 {
-    margin-bottom: 12px;
-    color: var(--white);
+  margin-bottom: 12px;
+
+  color: var(--white);
 }
 
 .card p {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.92rem;
-    line-height: 1.8;
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 0.92rem;
+  line-height: 1.8;
 }
 
 
 /* CREDENCIAIS */
-.credenciais {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
+
+.credenciais-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
 }
 
-.credenciais {
-    padding-left: 28px;
-    border-left: 2px solid var(--gold);
+.credencial {
+  padding-left: 28px;
+
+  border-left: 2px solid var(--gold);
 }
 
 .credenciais-num {
-    margin-bottom: 12px;
-    color: var(--gold);
-    font-family: var(--title);
-    font-size: 2.4rem;
-    opacity: 0.7;
+  margin-bottom: 12px;
+
+  color: var(--gold);
+
+  font-family: var(--title);
+  font-size: 2.4rem;
+
+  opacity: 0.7;
 }
 
-.credenciais h3 {
-    margin-bottom: 10px;
+.credencial h3 {
+  margin-bottom: 10px;
 }
 
-.credenciais p {
-    color: var(--gray);
-    font-size: 0.95rem;
-    line-height: 1.8;
+.credencial p {
+  color: var(--gray);
+
+  font-size: 0.95rem;
+  line-height: 1.8;
 }
 
 
 /* DEPOIMENTOS */
+
 .testimonials {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .testimonial {
-    position: relative;
-    padding: 36px 30px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    transition: box-shadow var(--ease), transform var(--ease);
+  position: relative;
+
+  padding: 36px 30px;
+
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  transition:
+    box-shadow var(--ease),
+    transform var(--ease);
 }
 
 .testimonial:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 30px rgba(90, 26, 26, 0.1);
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 30px rgba(90, 26, 26, 0.1);
+}
+
+.testimonial::before {
+  content: "\201C";
+
+  position: absolute;
+
+  top: 10px;
+  left: 20px;
+
+  color: var(--gold);
+
+  font-family: var(--title);
+  font-size: 4rem;
+  line-height: 1;
+
+  opacity: 0.3;
+}
+
+.testimonial p {
+  padding-top: 20px;
+  margin-bottom: 20px;
+
+  color: var(--gray);
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+
+  font-style: italic;
+}
+
+.testimonial footer {
+  color: var(--wine);
+
+  font-size: 0.82rem;
+  font-weight: 500;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* CONTATO */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: padding-left var(--ease);
+}
+
+.contact-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contact-item:hover {
+  padding-left: 8px;
+}
+
+.contact-label {
+  margin-bottom: 6px;
+
+  color: var(--gold);
+
+  font-size: 0.72rem;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-value {
+  color: var(--white);
+
+  font-family: var(--title);
+  font-size: 1.4rem;
+
+  transition: color var(--ease);
+}
+
+.contact-item:hover .contact-value {
+  color: var(--gold);
 }
